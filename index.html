@@ -48,11 +48,11 @@
 
        (function () {
          // Suppress all console logs
-         //console.log = function () { };
-         //console.warn = function () { };
-         //console.error = function () { };
-         //console.info = function () { };
-         //console.debug = function () { };
+        //  console.log = function () { };
+        //  console.warn = function () { };
+        //  console.error = function () { };
+        //  console.info = function () { };
+        //  console.debug = function () { };
        })();
 
       const hideFullScreenButton = "true";
@@ -162,7 +162,8 @@
 
       function closeTab() {
         // If the tab cannot be closed, redirect to the specified URL
-        window.location.href = "https://appmcstaging.tiendaselasturiano.com/game/";
+        console.log("OPEN NEW TAB");
+        window.open("https://appmcstaging.tiendaselasturiano.com/game/", "_blank");
         //window.close();
       }
 
